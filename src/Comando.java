@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-/**
+/** che palle
  * Questa classe modella un comando.
  * Un comando consiste al piu' di due parole:
  * il nome del comando ed un parametro
