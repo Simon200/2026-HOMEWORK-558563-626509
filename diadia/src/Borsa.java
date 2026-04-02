@@ -1,3 +1,4 @@
+// modificato da XX e MAtteo Pozza
 
 public class Borsa {
 	public final static int DEFAULT_PESO_MAX_BORSA = 10;
@@ -54,7 +55,21 @@ public class Borsa {
 
 	public Attrezzo removeAttrezzo(String nomeAttrezzo) {
 		Attrezzo a = null;
-		// ---> TODO (implementare questo metodo) <---
+			    for (int i = 0; i < this.numeroAttrezzi; i++) {
+	        if (this.attrezzi[i].getNome().equals(nomeAttrezzo)) {
+	            Attrezzo rimosso = this.attrezzi[i];
+
+	            // shift a sinistra
+	            for (int j = i; j < this.numeroAttrezzi - 1; j++) {
+	                this.attrezzi[j] = this.attrezzi[j + 1];
+	            }
+
+	            this.attrezzi[this.numeroAttrezzi - 1] = null;
+	            this.numeroAttrezzi--;
+
+	            return rimosso;
+	        }
+
 		return a;
 	}
 
