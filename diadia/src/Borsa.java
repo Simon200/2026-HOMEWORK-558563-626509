@@ -1,4 +1,4 @@
-// modificato da XX e MAtteo Pozza
+// fatto da Simone Felice e Matteo Pozza
 
 public class Borsa {
 	public final static int DEFAULT_PESO_MAX_BORSA = 10;
